@@ -10,5 +10,5 @@ static/results/
 uploads/
 feedback_log.csv
 crossbreed_log.csv
-best_model.pth
+
 *.sqlite3
