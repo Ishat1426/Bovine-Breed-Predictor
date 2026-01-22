@@ -110,5 +110,3 @@ B.Tech CSE – Bennett University
 AI & Machine Learning Enthusiast
 
 
-## 📂 Project Structure
-
