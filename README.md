@@ -1,27 +1,47 @@
 # 🐄 Bovine Breed Predictor
 
-An AI-powered machine learning project that predicts the **breed of a bovine (cow/buffalo)** based on input features or images. This system helps in livestock management, breed identification, and agricultural research.
+An AI-powered deep learning application that classifies **Indian bovine breeds** using images captured from a **camera** or uploaded manually.  
+The system predicts the breed among **5 predefined classes** using a trained CNN model.
 
 ---
 
 ## 📌 Project Overview
 
-The **Bovine Breed Predictor** is designed to classify different bovine breeds using machine learning techniques.  
-It can be useful for:
+The **Bovine Breed Predictor** is a computer vision–based project developed to identify cattle breeds from images.  
+It allows users to either:
+
+- Capture an image using a camera  
+- Upload an image manually  
+
+The model then predicts the bovine breed with high accuracy.
+
+This project is useful for:
 - Farmers and dairy industries  
+- Livestock management  
 - Veterinary research  
-- Breed identification  
 - Smart agriculture systems  
+
+---
+
+## 🐄 Supported Breeds (5 Classes)
+
+1. Gir  
+2. Holstein Friesian (HF)  
+3. Jersey  
+4. Murrah  
+5. Nili Ravi  
 
 ---
 
 ## 🚀 Features
 
-- ✅ Predicts bovine breed accurately  
-- ✅ Machine learning–based classification  
-- ✅ Easy-to-use interface  
-- ✅ Scalable and extensible  
-- ✅ Works with real-world datasets  
+- ✅ Camera-based image capture  
+- ✅ Upload image for prediction  
+- ✅ Deep learning CNN model  
+- ✅ High accuracy classification  
+- ✅ Fast and simple interface  
+- ✅ Works locally  
+- ✅ Easy to extend  
 
 ---
 
@@ -30,36 +50,49 @@ It can be useful for:
 | Category | Technology |
 |--------|------------|
 | Language | Python |
-| ML Library | Scikit-learn / TensorFlow |
-| Data Handling | Pandas, NumPy |
-| Visualization | Matplotlib, Seaborn |
-| Model | Classification Model |
-| UI (Optional) | Flask / Streamlit |
+| Deep Learning | TensorFlow / Keras |
+| Image Processing | OpenCV |
+| Data Handling | NumPy, Pandas |
+| Model | CNN |
+| Web Framework | Flask |
+| Visualization | Matplotlib |
 
 ---
+
 ## 📂 Project Structure
-```bash
+
 Bovine-Breed-Predictor/
 │
 ├── dataset/
-│ └── bovine_data.csv
+│   └── train/
+│       ├── Gir/
+│       ├── HF/
+│       ├── Jersey/
+│       ├── Murrah/
+│       └── Nili_Ravi/
 │
 ├── model/
-│ └── trained_model.pkl
+│   └── bovine_model.h5
+│
+├── static/
+│   └── uploads/
+│
+├── templates/
+│   └── index.html
 │
 ├── app.py
 ├── train_model.py
-├── preprocess.py
 ├── requirements.txt
 └── README.md
-```
+
+---
 
 ## ⚙️ Installation & Setup
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/your-username/bovine-breed-predictor.git
-cd bovine-breed-predictor
+git clone https://github.com/Ishat1426/Bovine-Breed-Predictor.git
+cd Bovine-Breed-Predictor
 ```
 ### Step 2: Install Dependencies
 ```bash
@@ -80,10 +113,12 @@ python app.py
 
 ### 🧪 Sample Input
 ```bash
-Weight: 450 kg
-Age: 4 years
-Color: Brown
-Milk Yield: 15 L/day
+Image of cow or buffalo
+Real-time camera input
+Weight: 450 kg (optional)
+Age: 4 years (optional)
+Color: Brown (optional)
+Milk Yield: 15 L/day (optional)
 ```
 ### Output
 ```bash
@@ -98,15 +133,14 @@ Confusion Matrix
 Classification Report
 
 🚀 Future Enhancements
-Image-based breed detection (CNN)
 Mobile app integration
 Cloud deployment
-Real-time camera input
 Breed health prediction
 
 👨‍💻 Author
 Ishu Vadwani
 B.Tech CSE – Bennett University
 AI & Machine Learning Enthusiast
+
 
 
